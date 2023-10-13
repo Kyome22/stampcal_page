@@ -1,4 +1,4 @@
-# stampcal_page
-StampCalのプロダクトページ
+# stamprecord_page
+StampRecordのプロダクトページ
 
-デプロイ先: https://kyome.io/stampcal/index.html
+デプロイ先: https://kyome.io/stamprecord/index.html
