@@ -1,0 +1,23 @@
+.qa-box {
+  margin: 0px auto 30px;
+}
+
+.qa {
+  margin: 10px auto;
+  display: flex;
+  width: 700px;
+  font-family: "Exo 2", sans-serif;
+}
+
+.qa p.mark {
+  margin: 0px;
+  margin-right: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.qa p.text {
+  margin: 0px;
+  font-size: 24px;
+  text-align: left;
+}

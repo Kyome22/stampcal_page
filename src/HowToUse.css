@@ -1,0 +1,19 @@
+div.label {
+  padding: 20px;
+  display: inline-flex;
+  width: 640px;
+}
+
+div.label img.status-icon {
+  margin-right: 10px;
+  width: auto;
+  height: 40px;
+}
+
+div.label p.text {
+  margin: 0px;
+  font-size: 24px;
+  font-weight: bolder;
+  text-align: left;
+  line-height: 40px;
+}
