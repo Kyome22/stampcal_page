@@ -1,5 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import Terrier from "./Terrier";
 import "./Header.css";
 
 type Props = {
@@ -12,6 +13,7 @@ export function Header(props: Props) {
 
   return (
     <div className="header">
+      <Terrier />
       <h2 className="title">{t("app_name")}</h2>
       <h3 className="language" onClick={onLangChange}>
         {t("language")}

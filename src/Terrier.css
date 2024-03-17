@@ -1,0 +1,17 @@
+.terrier {
+  margin: 0;
+  padding: 5px 15px;
+  width: 50px;
+  height: 50px;
+  background-color: #e4bc2c;
+}
+
+.terrier-target {
+  width: 50px;
+  height: 50px;
+}
+
+.terrier:hover .terrier-target {
+  transition: 0.5s;
+  transform: rotate(720deg);
+}
