@@ -29,7 +29,7 @@ export default function App() {
     return "ja";
   })(queryString.parse(window.location.search));
   const { t, i18n } = useTranslation();
-  const [lang, setLang] = useState(defaultLang);
+  const [lang] = useState(defaultLang);
 
   useEffect(() => {
     i18n.changeLanguage(lang);
@@ -37,7 +37,8 @@ export default function App() {
 
   const onLangChange = () => {
     window.scrollTo(0, 0);
-    setLang(lang === "en" ? "ja" : "en");
+    const newLang = lang === "en" ? "ja" : "en";
+    window.location.replace(`?lang=${newLang}`);
   };
 
   return (
