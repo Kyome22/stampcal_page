@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import i18n from "i18next";
 import { initReactI18next, useTranslation } from "react-i18next";
 import queryString from "query-string";
-import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Header, DummyHeader } from "./Header";
 import Content from "./Content";
 import Footer from "./Footer";
@@ -33,6 +32,7 @@ export default function App() {
 
   useEffect(() => {
     i18n.changeLanguage(lang);
+    document.documentElement.setAttribute("lang", lang);
   }, [lang, i18n]);
 
   const onLangChange = () => {
@@ -43,11 +43,7 @@ export default function App() {
 
   return (
     <div className="App">
-      <HelmetProvider>
-        <Helmet>
-          <title>{t("app_name")}</title>
-        </Helmet>
-      </HelmetProvider>
+      <title>{t("app_name")}</title>
       <Header onLangChange={onLangChange} />
       <DummyHeader />
       <Content />
